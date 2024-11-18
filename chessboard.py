@@ -1,6 +1,6 @@
 import matplotlib
 
-matplotlib.use('TkAgg')  # Yoki 'Qt5Agg', 'Agg', va hokazo
+matplotlib.use('TkAgg') 
 import matplotlib.pyplot as plt
 import numpy as np
 
