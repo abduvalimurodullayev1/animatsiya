@@ -5,7 +5,7 @@ app = Ursina()
 
 block_pick = 1  
 blocks = {
-    1: color.rgb(128, 128, 128),  # To'pg'ir (stone) tosh
+    1: color.rgb(128, 128, 128), 
     2: color.rgb(34, 139, 34),    # O't yashil
     3: color.rgb(139, 69, 19),    # Tuproq jigarrang
     4: color.rgb(128, 128, 128),  
