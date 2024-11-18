@@ -55,11 +55,9 @@ def draw_objects():
     for block in blocks:
         pygame.draw.rect(screen, red, block)
 
-    # Ballarni ko‘rsatish
     score_text = font.render(f"Score: {score}", True, white)
     screen.blit(score_text, (10, 10))
 
-    # O'yin tugagan bo'lsa, "O'yin tugadi" yozuvi
     if game_over:
         game_over_text = font.render("O'yin tugadi! Qayta boshlash uchun 'R' ni bosing", True, white)
         screen.blit(game_over_text, (screen_width // 2 - 200, screen_height // 2 - 20))
@@ -83,7 +81,6 @@ while running:
         ball.x += ball_speed_x
         ball.y += ball_speed_y
 
-        # Ball chegaradan chiqish
         if ball.left <= 0 or ball.right >= screen_width:
             ball_speed_x = -ball_speed_x
         if ball.top <= 0:
@@ -104,11 +101,9 @@ while running:
     draw_objects()
     clock.tick(60)
 
-    # O‘yinni qayta boshlash
     if game_over:
         keys = pygame.key.get_pressed()
         if keys[pygame.K_r]:
-            # O‘yinni qayta boshlash uchun o‘zgaruvchilarni qayta sozlash
             paddle = pygame.Rect(screen_width // 2 - paddle_width // 2, screen_height - paddle_height - 10,
                                  paddle_width, paddle_height)
             ball = pygame.Rect(screen_width // 2, screen_height // 2, ball_radius * 2, ball_radius * 2)
