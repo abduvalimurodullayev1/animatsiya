@@ -51,7 +51,7 @@ def draw_objects():
 
     pygame.draw.ellipse(screen, white, ball)
 
-    # Blocks
+    
     for block in blocks:
         pygame.draw.rect(screen, red, block)
 
