@@ -19,7 +19,7 @@ class Voxel(Button):
         super().__init__(
             parent=scene,
             position=position,
-            model='cube',  # Blok kubik shaklida bo'ladi
+            model='cube', 
             origin_y=0.5,
             texture='white_cube',
             color=blocks[block_pick],  # Blokning rangi tanlangan bo'ladi
