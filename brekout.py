@@ -1,35 +1,29 @@
 import pygame
 import random
 
-# Pygame ni boshlash
 pygame.init()
 
-# Ekran o‘lchamlari
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Breakout O‘yini")
 
-# Ranglar
 white = (255, 255, 255)
 blue = (0, 0, 255)
 red = (255, 0, 0)
 black = (0, 0, 0)
 
-# Paddle
 paddle_width = 100
 paddle_height = 20
 paddle_speed = 10
 paddle = pygame.Rect(screen_width // 2 - paddle_width // 2, screen_height - paddle_height - 10, paddle_width,
                      paddle_height)
 
-# Ball
 ball_radius = 10
 ball_speed_x = 5
 ball_speed_y = -5
 ball = pygame.Rect(screen_width // 2, screen_height // 2, ball_radius * 2, ball_radius * 2)
 
-# Blocks
 block_width = 80
 block_height = 30
 block_rows = 5
@@ -41,12 +35,11 @@ for row in range(block_rows):
         blocks.append(
             pygame.Rect(col * (block_width + 10) + 30, row * (block_height + 10) + 30, block_width, block_height))
 
-# Ballar va O‘yin Hali
 score = 0
 font = pygame.font.SysFont(None, 35)
 game_over = False
 
-# O‘yin Tsikllari
+
 running = True
 clock = pygame.time.Clock()
 
