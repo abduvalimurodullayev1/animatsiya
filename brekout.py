@@ -47,7 +47,6 @@ clock = pygame.time.Clock()
 def draw_objects():
     screen.fill(black)
 
-    # Paddle
     pygame.draw.rect(screen, blue, paddle)
 
     pygame.draw.ellipse(screen, white, ball)
