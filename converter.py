@@ -8,8 +8,7 @@ blocks = {
     1: color.rgb(128, 128, 128),  # To'pg'ir (stone) tosh
     2: color.rgb(34, 139, 34),    # O't yashil
     3: color.rgb(139, 69, 19),    # Tuproq jigarrang
-    4: color.rgb(128, 128, 128),  # Kulrang (to'sh)
-    # Qo'shimcha ranglar, agar kerak bo'lsa
+    4: color.rgb(128, 128, 128),  
     5: color.rgb(255, 255, 255),  # Qor oq
     6: color.rgb(255, 69, 0),     # Lava qizil
     7: color.rgb(0, 0, 255),      # Suv moviy
