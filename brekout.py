@@ -80,7 +80,6 @@ while running:
         if keys[pygame.K_RIGHT] and paddle.right < screen_width:
             paddle.x += paddle_speed
 
-        # Ball harakatini yangilash
         ball.x += ball_speed_x
         ball.y += ball_speed_y
 
