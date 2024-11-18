@@ -6,12 +6,12 @@ app = Ursina()
 block_pick = 1  
 blocks = {
     1: color.rgb(128, 128, 128), 
-    2: color.rgb(34, 139, 34),    # O't yashil
-    3: color.rgb(139, 69, 19),    # Tuproq jigarrang
+    2: color.rgb(34, 139, 34),   
+    3: color.rgb(139, 69, 19),    
     4: color.rgb(128, 128, 128),  
-    5: color.rgb(255, 255, 255),  # Qor oq
-    6: color.rgb(255, 69, 0),     # Lava qizil
-    7: color.rgb(0, 0, 255),      # Suv moviy
+    5: color.rgb(255, 255, 255), 
+    6: color.rgb(255, 69, 0),     
+    7: color.rgb(0, 0, 255),     
 }
 
 class Voxel(Button):
@@ -42,7 +42,6 @@ for z in range(20):
 # O'yinchini yaratish (1-shaxs ko'rinishidagi harakat boshqaruvi)
 player = FirstPersonController()
 
-# Klavishlar yordamida bloklarni tanlash
 def input(key):
     global block_pick
     if key == '1':
