@@ -50,7 +50,6 @@ def draw_objects():
     # Paddle
     pygame.draw.rect(screen, blue, paddle)
 
-    # Ball
     pygame.draw.ellipse(screen, white, ball)
 
     # Blocks
