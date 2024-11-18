@@ -3,8 +3,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
 
-# Blok modellari va ranglari
-block_pick = 1  # Qaysi blok qo'yilishini belgilash uchun
+block_pick = 1  
 blocks = {
     1: color.rgb(128, 128, 128),  # To'pg'ir (stone) tosh
     2: color.rgb(34, 139, 34),    # O't yashil
