@@ -1,47 +1,39 @@
 import pygame
 import sys
 
-# Pygame ni boshlash
 pygame.init()
 
-# Ekran o‘lchamlari
 screen_width = 800
 screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Futbol O‘yini")
 
-# Ranglar
 green = (0, 255, 0)
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
 blue = (0, 0, 255)
 
-# O'yinchi parametrlar
 player_size = 50
 player_speed = 5
 player1 = pygame.Rect(100, screen_height // 2 - player_size // 2, player_size, player_size)
 player2 = pygame.Rect(screen_width - 150, screen_height // 2 - player_size // 2, player_size, player_size)
 
-# To'p parametrlar
 ball_size = 20
 ball_speed_x = 4
 ball_speed_y = 4
 ball = pygame.Rect(screen_width // 2 - ball_size // 2, screen_height // 2 - ball_size // 2, ball_size, ball_size)
 
-# Gol darvozalari
 goal_width = 20
 goal_height = 100
 goal1 = pygame.Rect(0, screen_height // 2 - goal_height // 2, goal_width, goal_height)
 goal2 = pygame.Rect(screen_width - goal_width, screen_height // 2 - goal_height // 2, goal_width, goal_height)
 
-# Hisoblash
 score1 = 0
 score2 = 0
 font = pygame.font.SysFont(None, 35)
 
-# O‘yin Tsikllari
-running = True  # Bu yerda running o'zgaruvchisini e'lon qilamiz
+running = True  
 clock = pygame.time.Clock()
 
 
