@@ -66,23 +66,19 @@ while running:
 
     keys = pygame.key.get_pressed()
 
-    # O'yinchi 1 harakatlari
     if keys[pygame.K_w] and player1.top > 0:
         player1.y -= player_speed
     if keys[pygame.K_s] and player1.bottom < screen_height:
         player1.y += player_speed
 
-    # O'yinchi 2 harakatlari
     if keys[pygame.K_UP] and player2.top > 0:
         player2.y -= player_speed
     if keys[pygame.K_DOWN] and player2.bottom < screen_height:
         player2.y += player_speed
 
-    # To'p harakatlari
     ball.x += ball_speed_x
     ball.y += ball_speed_y
 
-    # To'p chegara va gol darvozalari bilan to'qnashishi
     if ball.top <= 0 or ball.bottom >= screen_height:
         ball_speed_y = -ball_speed_y
     if ball.colliderect(player1) or ball.colliderect(player2):
