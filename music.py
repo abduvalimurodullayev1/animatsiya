@@ -3,20 +3,17 @@ from tkinter import *
 from tkinter import filedialog
 import pygame
 
-# Ilovani ishga tushirish uchun asosiy oynani yaratish
 root = Tk()
 root.title("Music Player")
 root.geometry("500x400")
 
 pygame.mixer.init()
 
-# Ovoz yozuvlari ro'yxati va pleylist
 songs = []
 current_song = ""
 paused = False
 
 
-# Musiqa fayllarini yuklash uchun funksiya
 def load_music():
     global current_song
     root.directory = filedialog.askdirectory()
@@ -31,7 +28,6 @@ def load_music():
     current_song = songs[song_list.curselection()[0]]
 
 
-# Musiqa ijro etish funksiyasi
 def play_music():
     global current_song, paused
     if paused:
@@ -42,14 +38,12 @@ def play_music():
         pygame.mixer.music.play(loops=0)
 
 
-# Musiqa pauza qilish funksiyasi
 def pause_music():
     global paused
     pygame.mixer.music.pause()
     paused = True
 
 
-# Keyingi musiqa ijro etish funksiyasi
 def next_music():
     global current_song, paused
     next_song_index = song_list.curselection()[0] + 1
@@ -61,7 +55,6 @@ def next_music():
     play_music()
 
 
-# Oldingi musiqa ijro etish funksiyasi
 def prev_music():
     global current_song, paused
     prev_song_index = song_list.curselection()[0] - 1
@@ -73,7 +66,6 @@ def prev_music():
     play_music()
 
 
-# Menyu yaratish
 menubar = Menu(root)
 root.config(menu=menubar)
 organise_menu = Menu(menubar, tearoff=False)
