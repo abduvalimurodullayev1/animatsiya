@@ -49,7 +49,6 @@ def draw_objects():
     pygame.draw.rect(screen, red, goal1)
     pygame.draw.rect(screen, red, goal2)
 
-    # Gol Hisobi
     score_text = font.render(f"Score: {score1} - {score2}", True, white)
     screen.blit(score_text, (screen_width // 2 - score_text.get_width() // 2, 10))
 
