@@ -40,14 +40,12 @@ clock = pygame.time.Clock()
 def draw_objects():
     screen.fill(green)
 
-    # Futbolchilar
+    
     pygame.draw.rect(screen, white, player1)
     pygame.draw.rect(screen, white, player2)
 
-    # To'p
     pygame.draw.ellipse(screen, black, ball)
 
-    # Gol darvozalari
     pygame.draw.rect(screen, red, goal1)
     pygame.draw.rect(screen, red, goal2)
 
