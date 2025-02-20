@@ -20,6 +20,7 @@ paddle_speed = 10
 paddle = pygame.Rect(screen_width // 2 - paddle_width // 2, screen_height - paddle_height - 10, paddle_width,
                      paddle_height)
 
+
 ball_radius = 10
 ball_speed_x = 5
 ball_speed_y = -5
