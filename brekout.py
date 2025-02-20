@@ -8,6 +8,7 @@ screen_height = 600
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Breakout O‘yini")
 
+
 white = (255, 255, 255)
 blue = (0, 0, 255)
 red = (255, 0, 0)
